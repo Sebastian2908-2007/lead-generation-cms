@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS my_leads;
+
+CREATE DATABASE my_leads;
