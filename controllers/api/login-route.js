@@ -5,13 +5,23 @@ require('dotenv').config();
 router.post('/',(req,res) => {
     const name = process.env.user1;
     const password = process.env.userPassword;
+    const sId = '888'
 
-    if(name === req.body.name && password === req.body.password) {
-        res.json({message:"you are now logged in"});
+    if(name != req.body.name || password != req.body.password) {
+        res.status(500).json({message:'incorrect username or password!'});
         return;
     } 
-    res.status(500).json({message:'incorrect username or password!'});
-    
+   req.session.save(() => {
+       req.session.user_id = sId;
+       req.session.username = name;
+       req.session.loggedIn = true;
+
+       res.json({user: name,message:"you are now logged in"});
+   });
+
+ console.log(req.session);  
+console.log(req.session.user_id);
+   
     
 });
 
