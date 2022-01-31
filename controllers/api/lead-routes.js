@@ -47,13 +47,7 @@ router.post('/',(req,res) => {
         email: req.body.email,
         phone_number: req.body.phone_number
     })
-    .then(dbLead => {
-        if(!dbLead) {
-            res.json({message:'incomplete field'});
-            return;
-        }
-        res.json(dbLead);
-    })
+    .then(dbLead => res.json(dbLead))
     .catch(err => { 
         console.log(err);
         res.status(500).json(err);

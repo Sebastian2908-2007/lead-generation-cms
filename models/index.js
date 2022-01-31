@@ -3,7 +3,7 @@ const Note = require('./Note');
 
 Note.belongsTo(Lead, {
     foreignKey: 'lead_id',
-    onDelete:'SET NULL'
+    onDelete:'CASCADE'
 });
 
 Lead.hasMany(Note, {
