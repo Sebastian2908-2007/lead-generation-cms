@@ -2,6 +2,12 @@ const express = require('express');
 const sequelize = require('./config/connection');
 const app = express();
 const PORT = process.env.PORT || 3001;
+// require path for rendering the static public foles
+const path = require('path');
+// require express-handlebars
+const exphbs = require('express-handlebars');
+// activate handlebars this is also where you will pass in helper functions etc.
+const hbs = exphbs.create({});
 
 const routes = require('./controllers');
 // require express session
@@ -24,9 +30,14 @@ const sess = {
 
 // have express session use our sess object everytime a route is hit for access to express sesion
 app.use(session(sess));
+// set handlebars as the template engine of choice
+app.engine('handlebars', hbs.engine);
+app.set('view engine','handlebars');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+// use path to help serve ;our static files
+app.use(express.static(path.join(__dirname,'public')));
 
 app.use(routes);
 
