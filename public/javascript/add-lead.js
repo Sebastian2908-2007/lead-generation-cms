@@ -1,4 +1,6 @@
 async function addLeadHandler(event) {
+event.preventDefault();
+
    const first_name = document.querySelector('#lead-first-name').value;
    const last_name = document.querySelector('#lead-last-name').value;
    const email = document.querySelector('#email').value;
