@@ -17,5 +17,17 @@
             <label for="phone-number">Phone Number</label>
             <input type="text" id="phone-number" name="phone-number">
         </div>
+        <button type="submit">Add Lead</button>
     </form>
+</section>
+<section>
+    <h2>Current Leads</h2>
+    <ol>
+        {{#each leads as |lead|}}
+        <li>
+      {{> lead-info lead}}
+        </li>
+        {{/each}}
+    </ol>
+
 </section>
