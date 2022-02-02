@@ -18,4 +18,21 @@ router.get('/',authorize,(req,res) => {
   
 });
 
+router.get('/edit/:id',authorize,(req,res) => {
+    Lead.findOne({
+        where: {
+            id: req.params.id 
+        },
+        attributes:['id','first_name','last_name','email','phone_number','created_at'],
+        include: {
+            model:Note
+        }
+    }).then(dbLead => {
+        const lead = dbLead.get({plain: true});
+        res.render('edit-lead',{lead,loggedIn: req.session.loggedIn})
+    }).catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    })
+});
 module.exports = router;

@@ -1,0 +1,11 @@
+<article>
+    <form class="edit-lead-form"> 
+    <input name="first_name" type="text" value="{{lead.first_name}}"/>
+    <input name="last_name" type="text" value="{{lead.last_name}}"/>
+    <input name="email" type="text" value="{{lead.email}}"/>
+    <input name="phone" type="text" value="{{lead.phone_number}}"/>
+    <button type="submit">Save Lead</button>
+     <button type="button" name="delete-lead-btn">Delete</button>
+    </form>
+    <span>{{lead.created_at}}</span>
+</article>
