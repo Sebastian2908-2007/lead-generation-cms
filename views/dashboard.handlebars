@@ -26,8 +26,10 @@
         {{#each leads as |lead|}}
         <li>
       {{> lead-info lead}}
+      <a href="/dashboard/edit/{{lead.id}}">Edit Lead</a>
         </li>
         {{/each}}
     </ol>
 
 </section>
+<script src="/javascript/add-lead.js"></script>
