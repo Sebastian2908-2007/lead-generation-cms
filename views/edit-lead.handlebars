@@ -9,7 +9,8 @@
     <button type="submit">Save Lead</button>
      <button type="button" name="delete-lead-btn">Delete</button>
     </form>
-    <span>{{lead.created_at}}</span>
+    <span>{{format_date lead.created_at}}</span>
+     <span>{{lead.notes.length}} {{format_plural "note" lead.notes.length}}</span>   
 </article>
 <script src="/javascript/edit-lead.js"></script>
 <script src="/javascript/delete-lead.js"></script>

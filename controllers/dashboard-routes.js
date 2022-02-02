@@ -35,4 +35,24 @@ router.get('/edit/:id',authorize,(req,res) => {
         res.status(500).json(err);
     })
 });
+
+router.get('/lead/:id',authorize,(req,res) => {
+    Lead.findOne({
+        where: {
+            id: req.params.id 
+        },
+        attributes:['id','first_name','last_name','email','phone_number','created_at'],
+        include: {
+            model: Note,
+            attributes:['note_text','created_at'] 
+        }
+    })
+    .then(dbLead => {
+        const lead = dbLead.get({plain:true});
+        res.render('single-lead', {lead, loggedIn: req.session.loggedIn})
+    }).catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+});
 module.exports = router;

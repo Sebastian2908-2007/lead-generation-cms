@@ -25,6 +25,8 @@
     <ol>
         {{#each leads as |lead|}}
         <li>
+            <!--the link below will render a single lead page where you can add notes-->
+       <a href="/dashboard/lead/{{lead.id}}"> {{lead.notes.length}} {{format_plural "note" lead.notes.length}}</a>     
       {{> lead-info lead}}
       <a href="/dashboard/edit/{{lead.id}}">Edit Lead</a>
         </li>

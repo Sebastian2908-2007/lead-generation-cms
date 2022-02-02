@@ -4,10 +4,12 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 // require path for rendering the static public foles
 const path = require('path');
+// require helper functions to pass to handlebars
+const helpers = require('./utils/helpers');
 // require express-handlebars
 const exphbs = require('express-handlebars');
 // activate handlebars this is also where you will pass in helper functions etc.
-const hbs = exphbs.create({});
+const hbs = exphbs.create({helpers});
 
 const routes = require('./controllers');
 // require express session
