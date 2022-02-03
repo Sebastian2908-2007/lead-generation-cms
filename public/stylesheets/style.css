@@ -1,0 +1,23 @@
+html{
+  
+    background-image: url(https://bestlifeonline.com/wp-content/uploads/sites/3/2016/12/happy-man.jpg?fit=1024%2C753&ssl=1);
+    background-size:cover;
+    background-position: 80%;
+    background-attachment: fixed; 
+    
+    
+   
+}
+body {
+    background-color:#3cc47c ;
+    opacity: .7;
+   height: 100%;
+   width: 100;
+   position:absolute;
+   padding: 0%;
+   margin: 0%;
+}
+
+  /*background-color:#3cc47c ;
+    opacity: .7;
+*/
