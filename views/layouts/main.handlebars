@@ -9,7 +9,10 @@
 <body>
     <header>
         <nav>
+            {{#if loggedIn}}
             <button id="logout">logout</button>
+            <a href="/dashboard">&larr; Back to the dashboard</a>
+            {{/if}}
         </nav>
     </header>
     {{{ body }}}
