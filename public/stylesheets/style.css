@@ -26,7 +26,7 @@ body {
 /*main,body,html will stay at thes settings all templates go through main*/
 main{
     background-color:#3cc47c ;
-    opacity: .8;
+    opacity: .7;
    height: 100vh;
    width: 100vw;
    position:absolute; 
@@ -66,7 +66,7 @@ main{
     flex-direction: column;
     border: 1px solid black;
     width: 60%;
-    height: 218px;
+    height: 228px;
     padding: 10px;
     margin: 3.5%;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -111,7 +111,7 @@ main{
 }
 
 .form-cta h3{
-    font-size: .77em;
+    font-size: .87em;
     margin-bottom: 1px;
     margin-top: 1px; 
     margin-bottom: 4px;
@@ -121,7 +121,7 @@ main{
     
     margin-bottom: 3px;
     margin-top: 1px; 
-    font-size: .68em;
+    font-size: .78em;
   
 }
 
@@ -140,24 +140,24 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* flex: 2 2 0%; */
     max-height: 50vh;
     
 }
 .elavator-pitch p{
+font-size: 1.11em;
 margin: .88em;
 }
 
 h1{
-    font-size: 1em;
+    font-size: 1.38em;
     margin: .2em;
 }
 h3 {
-    font-size: .95em;
+    font-size: 1.08em;
     margin: .25em;
 }
 label {
-    font-size: .65em;
+    font-size: .68em;
     margin-left: 8%; 
 }
 
