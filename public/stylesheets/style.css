@@ -42,7 +42,7 @@ main{
 
 
 
-/*this is the lead capture form on lead-capture.handlebars*/
+/*this is the article that holds the lead capture form on lead-capture.handlebars*/
 .lead-form-article {
     display: flex;
     flex-direction: column;
@@ -56,8 +56,6 @@ main{
     background-attachment: fixed;
     top: 0;
     /*needed for sticky element*/
-    
-    
 }
 
  /*new-lead-form styles begin*/
@@ -125,17 +123,18 @@ main{
   
 }
 
+label {
+    font-size: .68em;
+    margin-left: 8%; 
+}
+
 .color-change{
     color: black;
 }
 
+/*new-lead-form styles end*/
 
-
-
-
- /*new-lead-form styles end*/
-
-/*this is the article from lead-capture.handlebars*/
+/*this is the article that holds the un ordered lists from lead-capture.handlebars*/
 .elavator-pitch {
     display: flex;
     flex-direction: column;
@@ -156,10 +155,7 @@ h3 {
     font-size: 1.08em;
     margin: .25em;
 }
-label {
-    font-size: .68em;
-    margin-left: 8%; 
-}
+
 
 p,q,h1,h3,li,h4{
     color: white;
@@ -170,10 +166,6 @@ li {
     margin: 1em;
 }
 
-/* .elavator-pitch h1,h3,h4{
-   margin: 10%;
-
-} */
 
 .elavator-pitch ul{
   padding: 20%
@@ -181,5 +173,65 @@ li {
 
 .outcast-element{
     padding: 10% 20% 2% 20%;
+}
+
+/*this is the article that holds the un ordered lists from lead-capture.handlebars ending*/
+/*All styles above look good on mobile devices everything below will address screen sizes 768px and above*/
+
+@media screen and (min-width: 768px){
+    /*styles for form begin*/
+  .new-lead-form{
+      width: 80%;
+      height: 365px;
+
+  }
+  .new-lead-form input{
+    width: 99%;
+    margin-bottom: 10px;
+    height: 10%;
+     
+  }
+
+   .new-lead-form button{
+    font-size: 16px;
+    height: 15%;
+    width: 99%;
+    font-size: 100%;
+  } 
+ label {
+      font-size: .98em ;
+  }
+
+  .form-cta h3 {
+      font-size: 1.33em ;
+  }
+  .form-cta p {
+      font-size: 1.05em ;
+  }
+
+   /*styles for form end*/
+
+   /*this is the article that holds the un ordered lists from lead-capture.handlebars*/
+   .elavator-pitch p{
+    font-size: 1.88em;
+    margin: .88em;
+    }
+    
+    h1{
+        font-size: 2.38em;
+       
+    }
+    h3 {
+        font-size: 2.11em;
+        margin: .25em;
+    }
+    h4{
+        font-size: 1.78em;
+    }
+    
+    li {
+        font-size: 1.43em;
+    }
+
 }
 
