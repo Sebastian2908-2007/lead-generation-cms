@@ -12,8 +12,9 @@ body {
     padding: 0;
    background-image: url(https://bestlifeonline.com/wp-content/uploads/sites/3/2016/12/happy-man.jpg?fit=1024%2C753&ssl=1);
    background-size:cover;
-   background-position: 80%;
+   background-position: 40%;
    background-attachment: fixed;
+   display: flex;
   
 
 }
@@ -25,42 +26,48 @@ body {
 /*main,body,html will stay at thes settings all templates go through main*/
 main{
     background-color:#3cc47c ;
-    opacity: .7;
+    opacity: .8;
    height: 100vh;
    width: 100vw;
    position:absolute; 
-   overflow:auto;
+    overflow:auto; 
    display: flex;
    flex-direction:column;
    justify-content: center;
-
+  
   
 }
 
 
 
-/*this is the article from lead-capture.handlebars*/
-.elavator-pitch {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 /*this is the lead capture form on lead-capture.handlebars*/
-.lead-form {
+.lead-form-article {
     display: flex;
     flex-direction: column;
     align-content: flex-start;
-    border: 1px solid black;
     align-items: center;
+    max-height: 100vh;
+
+     /*needed for sticky element*/
+    position: -webkit-sticky;
+    position: sticky;
+    background-attachment: fixed;
+    top: 0;
+    /*needed for sticky element*/
+    
     
 }
+
+ /*new-lead-form styles begin*/
 .new-lead-form {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
-    width: 40%;
-    padding: 20px;
+    width: 60%;
+    height: 218px;
+    padding: 10px;
     margin: 3.5%;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     border-radius: 15px;
@@ -69,11 +76,16 @@ main{
 .new-lead-form button {
 
     background-color:#0E8044 ;
-    color: #B5E582;
+    color:white;
     border: none;
     padding: 10px 20px;
+    margin-top: 2px;
     font-size: 16px;
     border-radius: 10px;
+    height: 15%;
+    width: 97%;
+    font-size: 90%;
+     
 }
  
 .new-lead-form input {
@@ -83,7 +95,91 @@ main{
     color:#08302F;
     width: 100%;
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 2px;
     border-radius: 10px;
+    height: 4%;
+    width: 96%; 
+  ;
+    
    
 }
+
+.form-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-cta h3{
+    font-size: .77em;
+    margin-bottom: 1px;
+    margin-top: 1px; 
+    margin-bottom: 4px;
+}
+
+.form-cta  p {
+    
+    margin-bottom: 3px;
+    margin-top: 1px; 
+    font-size: .68em;
+  
+}
+
+.color-change{
+    color: black;
+}
+
+
+
+
+
+ /*new-lead-form styles end*/
+
+/*this is the article from lead-capture.handlebars*/
+.elavator-pitch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex: 2 2 0%; */
+    max-height: 50vh;
+    
+}
+.elavator-pitch p{
+margin: .88em;
+}
+
+h1{
+    font-size: 1em;
+    margin: .2em;
+}
+h3 {
+    font-size: .95em;
+    margin: .25em;
+}
+label {
+    font-size: .65em;
+    margin-left: 8%; 
+}
+
+p,q,h1,h3,li,h4{
+    color: white;
+    
+}
+
+li {
+    margin: 1em;
+}
+
+/* .elavator-pitch h1,h3,h4{
+   margin: 10%;
+
+} */
+
+.elavator-pitch ul{
+  padding: 20%
+}
+
+.outcast-element{
+    padding: 10% 20% 2% 20%;
+}
+
