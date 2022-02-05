@@ -9,16 +9,18 @@
 </head>
 <body>
    
-   
+     
+    <main> 
+    {{#if loggedIn}}
     <header>
         <nav>
-            {{#if loggedIn}}
             <button id="logout">logout</button>
-            <a href="/dashboard">&larr; Back to the dashboard</a>
-            {{/if}}
+            <a class="admin-link" href="/dashboard">&larr; Back to the dashboard</a>        
         </nav>
     </header>
-    <main> 
+    {{/if}}    
+       
+      
     {{{ body }}}
     </main>
     

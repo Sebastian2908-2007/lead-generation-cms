@@ -1,34 +1,41 @@
-<section>
-    <h2>Add A New Lead</h2>
-    <form class="new-lead-form">
-        <div>
-            <label for="lead-first-name">First Name</label>
-            <input type="text" id="lead-first-name" name="lead-first-name">
-        </div>
-        <div>
-            <label for="lead-last-name">Last Name</label>
-            <input type="text" id="lead-last-name" name="lead-last-name">
-        </div>
-        <div>
-            <label for="email">email</label>
-            <input type="text" id="email" name="email">
-        </div>
-        <div>
-            <label for="phone-number">Phone Number</label>
-            <input type="text" id="phone-number" name="phone-number">
-        </div>
+<section id="admin-lead-form-section">  
+    <form class="new-lead-form" id="admin-lead-form">
+          <div class="admin-lead-form-title">
+  <h3>Add A New Lead</h3>
+          </div>   
+      
+        
+            <label class='admin-form-label' for="lead-first-name">First Name</label>
+            <input class='admin-form-input' type="text" id="lead-first-name" name="lead-first-name">
+     
+       
+            <label class='admin-form-label'  for="lead-last-name">Last Name</label>
+            <input class='admin-form-input' type="text" id="lead-last-name" name="lead-last-name">
+       
+        
+            <label class='admin-form-label' for="email">email</label>
+            <input class='admin-form-input' type="text" id="email" name="email">
+      
+        
+            <label class='admin-form-label' for="phone-number">Phone Number</label>
+            <input class='admin-form-input' type="text" id="phone-number" name="phone-number">
+        
         <button type="submit">Add Lead</button>
     </form>
 </section>
-<section>
-    <h2>Current Leads</h2>
-    <ol>
+<section class="lead-section">
+    <h1>Current Leads</h1>
+    <ol class="admin-ol">
         {{#each leads as |lead|}}
-        <li>
+        <li class="admin-li">
             <!--the link below will render a single lead page where you can add notes-->
-       <a href="/dashboard/lead/{{lead.id}}"> {{lead.notes.length}} {{format_plural "note" lead.notes.length}}</a>     
+
+        <div class="list-item-links"> 
+      <a class="admin-link" href="/dashboard/edit/{{lead.id}}">Edit Lead</a>
+      <a class="admin-link" href="/dashboard/lead/{{lead.id}}"> {{lead.notes.length}} {{format_plural "note" lead.notes.length}}</a>  
+      </div>   
       {{> lead-info lead}}
-      <a href="/dashboard/edit/{{lead.id}}">Edit Lead</a>
+     
         </li>
         {{/each}}
     </ol>
