@@ -1,13 +1,19 @@
-<div> 
-{{#each this}}
-<section class="comment">
+<div class="note-containing-div"> 
+
+<ol class="note">
+    {{#each this}}
+    <li>
         <div class="meta">
         {{format_date created_at}}
         </div>
-        <div class="text">
+        
+        <p class="text" type="text">
             {{note_text}}
-        </div>
-        <a href='/dashboard/note/{{id}}'>Edit Note</a> 
-    </section>
-    {{/each}}
+        </p>
+        
+        <a  class="admin-link" href='/dashboard/note/{{id}}'>Edit Note</a> 
+     </li>
+     {{/each}}
+    </ol>
+    
     </div>

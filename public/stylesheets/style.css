@@ -180,6 +180,10 @@ li {
 /*dashboard.handlebars*/
 
 /*conditional header styles*/
+header {
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
 
 header nav {
     display: flex;
@@ -193,6 +197,8 @@ nav button {
     margin-right: 20px;
     border-radius: 11px;
     background-color: white;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 nav a {
@@ -211,10 +217,16 @@ nav a {
   max-height: 100vh;
  
 }
+
+.admin-form-label {
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .admin-lead-form-title{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     /*Admin lead form ends*/
 
@@ -229,6 +241,7 @@ nav a {
     .lead-section h1 {
         font-size: 2em;
         margin-top: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
     /*the ordered list on the /dashboard. Styles start*/
@@ -249,23 +262,16 @@ nav a {
 }
 
 
-/* .admin-link {
-    border-bottom: 1px solid white;
-    text-decoration: none;
-    font-size: 1.08em ;
-    color: white;
-   
-} */
-
-/*styles links list items in*/
-/* .admin-li a */.admin-link { 
+.admin-link { 
     font-size: 1.20em;
     color:#0E8044 ;
     border-bottom: 1px solid #0E8044;
     text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 /*=========================================*/
 
+/*this styles the code in lead info handlebars*/
 .lead-article{
  display: flex;
  flex-direction: column;
@@ -277,10 +283,80 @@ nav a {
 .lead-article span {
     margin-bottom: 5px;
     font-size: 1.11em;
-    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-/*the ordered list on the /dashboard. Styles end*/
+/*=============================================================================**/
+
 /*admin lead section ends*/
+/*the ordered list on the /dashboard. Styles end*/
+/*this styles code in single-lead.handlebars*/
+.single-lead-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100vh;
+    margin-top:20px;
+}
+
+.single-lead-info-container {
+    margin-top: 20px;
+  margin-bottom: 50px; 
+  padding: 10px ; 
+  border: 1px solid #0E8044;
+  border-radius: 15px;
+}
+/*note form on single-lead.handlebars start*/
+.note-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 11px;
+}
+
+.note-form textarea {
+    border-radius: 15px;
+    margin-right: 11px;
+    width: 70vw;
+    height: 8vh;
+}
+
+.note-form button{
+    border-radius: 11px;
+    background-color: white;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*note form on single-lead.handlebars end*/
+/*style for note-info.handlebars */
+.note-containing-div{
+    margin-top: 4vh;
+}
+.note{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #0E8044;
+    padding: 20px;
+   
+}
+
+.note li {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+   
+   
+}
+.text {
+    width: 40vw;
+   
+   
+}
+
+/*style for note-info.handlebars ends*/
+
+/*single-lead.handlebars ends*/
+
 
 
 /*dashboard.handlebars ends*/

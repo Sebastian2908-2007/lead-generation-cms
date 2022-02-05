@@ -1,12 +1,16 @@
+<article class="single-lead-container">
+<div class="single-lead-info-container">
 {{>lead-info lead}}
+</div>
+
 <form class="note-form">
-    <div>
+    
         <textarea name="note-body"></textarea>
-    </div>
-    <div>
+   
         <button type="submit">add note</button>
-    </div>
+    
 </form>
 {{> note-info lead.notes}}
+ </article>
 
 <script src="/javascript/add-note.js"></script>
