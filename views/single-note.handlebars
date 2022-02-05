@@ -1,12 +1,12 @@
-<article>
-    <h2>Edit Note</h2>
-    <span>Created on: {{format_date note.created_at}}</span>
-    <form class="edit-note-form"> 
-    <div>
-        <textarea name="note-body"> {{note.note_text}}</textarea>
-    </div>
-    <button type="submit">Save Note</button>
+<article class="single-note-edit"> 
+    <h1>Edit Note</h1>
+    <h3>Created on: {{format_date note.created_at}}</h3>
+   <form class="edit-note-form"> 
+     <textarea name="note-body"> {{note.note_text}}</textarea>
+ <div class="note-edit-btn-container">
+    <button type="submit" class="save-note-button">Save Note</button>
     <button type="button" class="delete-note-btn">Delete Note</button>
+ </div>
     </form>
 </article>
 <script src="/javascript/edit-note.js"></script>
