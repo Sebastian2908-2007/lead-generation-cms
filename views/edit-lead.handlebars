@@ -1,15 +1,19 @@
-<article>
-    <h2>Edit Lead</h2>
+<article class="edit-lead-form-conatainer">
+    <h1>Edit Lead</h1>
     <form class="edit-lead-form"> 
     <input name="first_name" type="text" value="{{lead.first_name}}"/>
     <input name="last_name" type="text" value="{{lead.last_name}}"/>
     <input name="email" type="text" value="{{lead.email}}"/>
     <input name="phone" type="text" value="{{lead.phone_number}}"/>
+    <div class="edit-form-btn-container" > 
     <button type="submit">Save Lead</button>
      <button type="button" name="delete-lead-btn">Delete</button>
+    </div>
     </form>
-    <span>{{format_date lead.created_at}}</span>
-     <span>{{lead.notes.length}} {{format_plural "note" lead.notes.length}}</span>   
+    <div> 
+    <span class="edit-lead-form-span" >{{format_date lead.created_at}}</span>
+     <a class="edit-lead-form-link" href="/dashboard/lead/{{lead.id}}">{{lead.notes.length}} {{format_plural "note" lead.notes.length}}</a>   
+     </div>
 </article>
 <script src="/javascript/edit-lead.js"></script>
 <script src="/javascript/delete-lead.js"></script>
