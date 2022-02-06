@@ -5,7 +5,7 @@ const loginRoute = require('./login-route');
 const leadCapture = require('./lead-captureRoute');
 
 // this will render public facing lead capture page
-router.use('/make-20K-per-month',leadCapture);
+router.use('/',leadCapture);
 // this login rendders login page
 router.use('/login',loginRoute)
 // this will render all dashboard routes
