@@ -752,6 +752,7 @@ label {
 }
 
 /*media queries addressing admin side of the site*/
+/*ipads*/
 @media screen and (min-width: 768px) {
 
     /*conditional header styles start*/
@@ -801,8 +802,43 @@ label {
 }
 /*edit-lead.handlebars ends*/
 
+/*single-note.handlebars (edit note)starts*/
+.single-note-edit{
+    border: 2px solid #0E8044;
+    border-radius: 18px;
+    margin:4% 11%;
+}
+
+.single-note-edit h1 {
+ margin-top: 18%;
+ font-size: 5rem;
+}
+.single-note-edit h3 {
+ margin-top: 4%;
+}
+
+.edit-note-form{
+    height: 50vh;
+    margin-top: 20%;
+}
+
+.edit-note-form textarea {
+    height: 11vh ;
+    width: 35vw;
+    font-size: 1.08em;
+}
+
+.save-note-button, .delete-note-btn {
+    font-size: 1.33em;
+    margin-top: 22%;
+ 
+}
+/*single-note.handlebars (edit note)ends*/
+
 
 }
+
+/*average desktop size 1*/
 
 @media screen and (min-width: 1366px) {
     header {
@@ -856,9 +892,16 @@ label {
       font-size: 2em;
   }
    /*add note or the single-lead.handlebars ends*/
+
+   /*single-note.handlebars (edit note)starts*/
+/*single-note.handlebars (edit note)ends*/
     
     
 }
 
+/*average desktop size 2*/
+@media screen and (min-width: 1920px) {
+
+}
 
 
