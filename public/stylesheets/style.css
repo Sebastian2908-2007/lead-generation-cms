@@ -237,7 +237,7 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-height: 50vh;
+    max-height: 55vh;
     }
 
     .lead-section h1 {
@@ -750,4 +750,115 @@ label {
 
 
 }
+
+/*media queries addressing admin side of the site*/
+@media screen and (min-width: 768px) {
+
+    /*conditional header styles start*/
+    nav button {
+      width: 11vw;
+      height: 4vh;
+      font-size: 1.33em;
+      margin-right: 30%;
+    }
+    
+
+
+    /*conditional header styles ends*/
+
+/*styles most links*/
+ .admin-link { 
+     
+    font-size: clamp(1.20rem, 2.88vw, 3rem);  
+
+}
+/*================================================*/
+
+/*edit-lead.handlebars starts*/
+.edit-lead-form-conatainer h1{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 3.66em;
+}
+
+.edit-lead-form {
+    height: 60vh;
+}
+
+.edit-lead-form input {
+    font-size: 1.33em;  
+    
+ 
+}
+
+.edit-form-btn-container button {
+    font-size: 1.33em;
+}
+
+.edit-lead-info-link-container{
+    font-size: clamp(1.20rem, 2.88vw, 3rem);
+    margin-top: 8%;
+}
+/*edit-lead.handlebars ends*/
+
+
+}
+
+@media screen and (min-width: 1366px) {
+    header {
+        margin-bottom: 30px;
+
+        /*set this to 200 but it is really not a solution... my vh in the dashboard are effecting how I needd to style the header as far as margin top, really in the "lead-section" 
+        of dasboard  I think
+        I can set the vh to a lower number so as to not give header so much top padding,
+         and therefor helping fix its inconsistanceies
+        across application*/
+        /* margin-top: 200px; */
+
+        
+    }
+
+   .lead-section{
+    max-height: 30vh;
+   }
+   /*edit-lead.handlebars starts*/
+
+   .edit-lead-form-conatainer  {
+   height: 95vh;
+}
+
+    .edit-lead-form input {
+        margin: 2%;
+    } 
+
+    .edit-form-btn-container button {
+        margin-top: 1%;
+    }
+
+    .edit-lead-form {
+        height: 70vh;
+    }
+
+    .edit-lead-form-link {
+        margin-left: 8em;
+    }
+      /*edit-lead.handlebars ends*/
+
+    /*add note or the single-lead.handlebars*/
+  .single-lead-container{
+      height: 90vh;
+  }
+  .note-form textarea {
+      height: 12vh;
+  }
+
+  .note-form button {
+      font-size: 2em;
+  }
+   /*add note or the single-lead.handlebars ends*/
+    
+    
+}
+
+
 

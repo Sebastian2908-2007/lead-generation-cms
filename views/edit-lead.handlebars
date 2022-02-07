@@ -10,7 +10,7 @@
      <button type="button" name="delete-lead-btn">Delete</button>
     </div>
     </form>
-    <div> 
+    <div class="edit-lead-info-link-container"> 
     <span class="edit-lead-form-span" >{{format_date lead.created_at}}</span>
      <a class="edit-lead-form-link" href="/dashboard/lead/{{lead.id}}">{{lead.notes.length}} {{format_plural "note" lead.notes.length}}</a>   
      </div>
