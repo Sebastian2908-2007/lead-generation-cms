@@ -229,6 +229,7 @@ nav a {
     align-items: center;
     margin-bottom: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 0 0 8px rgba(0,0,0,0.5);
     }
     /*Admin lead form ends*/
 
@@ -244,6 +245,7 @@ nav a {
         font-size: 2em;
         margin-top: 30px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-shadow: 0 0 8px rgba(0,0,0,0.5);
     }
 
     /*the ordered list on the /dashboard. Styles start*/
@@ -291,6 +293,7 @@ nav a {
     /* font-size: clamp(1rem, -0.875rem + 8.333vw, 3.5rem);  */
     font-size: clamp(1.11rem, 2.25vw, 3rem);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
 }
 /*=============================================================================**/
 
@@ -314,7 +317,7 @@ nav a {
   padding: 10px ; 
   border: 1px solid #0E8044;
   border-radius: 15px;
- 
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
 }
 /*note form on single-lead.handlebars start*/
 .note-form {
@@ -389,7 +392,13 @@ nav a {
 
 .single-note-edit h1 {
     font-size: 1.88em;
+    text-shadow: 0 0 8px rgba(0,0,0,0.5);
 }
+
+.single-note-edit h3{
+    text-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
 .edit-note-form{
     display: flex;
     flex-direction: column;
@@ -446,6 +455,7 @@ nav a {
     margin-top: 40px;
     margin-bottom: 40px;
     font-size: 3em;
+    text-shadow: 0 0 8px rgba(0,0,0,0.5);
 }
 
 .edit-lead-form{
@@ -458,6 +468,7 @@ nav a {
     border: 2px solid #0E8044;
     border-radius: 18px;
     margin-bottom: 40px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
 }
 
 .edit-lead-form input {
@@ -489,6 +500,7 @@ nav a {
     margin-right: 11px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
+    text-shadow: 0 0 8px rgba(0,0,0,0.5);
 }
 
 .edit-lead-form-link  {
@@ -836,6 +848,7 @@ label {
 /*single-note.handlebars (edit note)ends*/
 
 
+
 }
 
 /*average desktop size 1*/
@@ -857,6 +870,11 @@ label {
    .lead-section{
     max-height: 30vh;
    }
+
+   .lead-section h1 {
+    font-size: 3em;
+}
+
    /*edit-lead.handlebars starts*/
 
    .edit-lead-form-conatainer  {
@@ -886,16 +904,27 @@ label {
   }
   .note-form textarea {
       height: 12vh;
+      font-size: 2em ;
   }
 
   .note-form button {
       font-size: 2em;
+  }
+
+  .single-lead-info-container {
+    border: 3px solid #0E8044; 
+  }
+
+  .note li {
+      border-top: 3px solid #0E8044;
   }
    /*add note or the single-lead.handlebars ends*/
 
   /*single-note.handlebars (edit note)starts*/
 .single-note-edit{
   height: 73vh;
+  border: 3px solid #0E8044;
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
 }
 
 .single-note-edit h1 {
@@ -926,12 +955,93 @@ label {
     margin-left: 25%;
 }
 /*single-note.handlebars (edit note)ends*/
-    
-    
+
+    /*dashboard.handlebars start*/
+.lead-section h1 {
+    font-size: 5em;
+}    
+
+.admin-ol {
+display: flex;
+flex-flow: row wrap;
+justify-content: space-evenly;
+padding: 0px;
+}
+
+.admin-li{
+margin-top: 11%;
+border-bottom: 8px solid #0E8044;
+}
+
+.admin-link{
+    margin-right: 20px ;
+}
+ /*dashboard.handlebars end*/
+
 }
 
 /*average desktop size 2*/
 @media screen and (min-width: 1920px) {
+    /*button in conditional header*/
+#logout{
+    font-size: 1.66em ;
+}
+/*=========================================================*/
+/*dashboard.handlebars start*/
+.new-lead-form{
+    height: 610px;
+}
+
+    .lead-section h1 {
+        font-size: 6em;
+    }   
+    /*dashboard.handlebars end*/ 
+    /*edit-lead.handlebars starts*/
+    .edit-lead-form-conatainer h1 {
+        font-size: 5.66em;
+    }
+
+    .edit-lead-form {
+        border: 3px solid #0E8044;
+        width: 50vw;
+    }
+
+    .edit-lead-form input{
+        width: 48vw;
+        font-size: 1.66em;
+    }
+
+    .edit-form-btn-container button {
+       width: 12vw;
+    }
+
+    .edit-form-btn-container button {
+        font-size: 1.66em;
+    }
+    /*edit-lead.handlebars ends*/
+
+    /*single-note.handlebars starts*/
+     .single-note-edit h1 {
+        font-size: 7rem; 
+     }
+
+     .single-note-edit h3 {
+         font-size:  4em;
+     }
+
+     .edit-note-form textarea {
+         font-size: 1.66em;
+         width: 55vw;
+         height: 13vh;
+
+     }
+
+     .note-edit-btn-container button {
+         font-size:  1.66em;
+     }
+    /*single-note.handlebars ends*/
+    
+    
 
 }
 
