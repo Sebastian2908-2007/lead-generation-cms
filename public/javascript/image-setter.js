@@ -18,8 +18,7 @@ function imageHandler () {
 
 if(location === home) {
    body.style.backgroundImage = 'https://bestlifeonline.com/wp-content/uploads/sites/3/2016/12/happy-man.jpg?fit=1024%2C753&ssl=1'
-   return; 
-}else if(location !== location2){
+}else if(location2 !== home){
    body.style.backgroundImage = 'none' 
 }
 
