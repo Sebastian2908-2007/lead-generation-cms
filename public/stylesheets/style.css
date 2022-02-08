@@ -518,6 +518,7 @@ nav a {
     flex-flow: column;
     align-items: center;
     border: 2px solid #0E8044;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
     border-radius: 15px;
     width: 80vw;
     height: 30vh;
@@ -779,6 +780,23 @@ label {
 
     /*conditional header styles ends*/
 
+    /*login.handlebars starts*/
+  
+    
+    .login-form button {
+     font-size: 1.66em;
+    }
+    
+    .login-form label {
+  margin: 0%;
+  font-size: 2em;
+    }
+    
+    .login-form input {
+      font-size: 2.33em;
+    }
+    /*login.handlebars ends*/
+
 /*styles most links*/
  .admin-link { 
      
@@ -978,6 +996,31 @@ border-bottom: 8px solid #0E8044;
 }
  /*dashboard.handlebars end*/
 
+ /*login.handlebars starts*/
+.login-form{
+    width: 63vw;
+    height: 33vh;
+    border: 3px solid #0E8044;
+    padding: 2%;
+}
+
+ .login-form button {
+    font-size: 1.96em;
+    width: 12vw;
+    margin-bottom: 1%;
+   }
+   
+   .login-form label {
+ margin: 0%;
+ font-size: 2em;
+   }
+   
+   .login-form input {
+     font-size: 2.33em;
+     width: 60vw;
+   }
+   /*login.handlebars ends*/
+
 }
 
 /*average desktop size 2*/
@@ -1041,7 +1084,23 @@ border-bottom: 8px solid #0E8044;
      }
     /*single-note.handlebars ends*/
     
-    
+    /*login.handlebars starts*/
+
+
+ .login-form button {
+    font-size: 2.38em;
+    width: 12vw;
+    margin-bottom: 1%;
+   }
+   
+   .login-form label {
+ margin: 0%;
+ font-size: 2.88em;
+   }
+   
+  
+   /*login.handlebars ends*/
+
 
 }
 
