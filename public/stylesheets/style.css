@@ -114,6 +114,7 @@ main{
     margin-bottom: 1px;
     margin-top: 1px; 
     margin-bottom: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .form-cta  p {
@@ -127,6 +128,7 @@ main{
 label {
     font-size: .68em;
     margin-left: 8%; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .color-change{
@@ -160,6 +162,7 @@ h3 {
 
 p,q,h1,h3,li,h4{
     color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
 
@@ -174,6 +177,7 @@ li {
 
 .outcast-element{
     padding: 10% 20% 2% 20%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /*admin side styles*/
@@ -709,6 +713,10 @@ label {
 }
 
 @media screen and (min-width: 1920px) {
+    .lead-form-article{
+        max-height: 60vh;
+    }
+    
     .new-lead-form{
         width: 45%;
         height: 480px;
