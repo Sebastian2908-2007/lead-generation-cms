@@ -14,8 +14,8 @@ function imageHandler () {
    const body = document.querySelector('body'); 
    const location = window.location.toString().split('/')[window.location.toString().split('/').length - 2];
    const location2 = window.location.toString().split('/')[window.location.toString().split('/').length - 1];
-   
-   const href = window.location.href.toString().split('/')[window.location.href.toString().split('/').length - 1];
+
+   const href = window.location.href.toString().split('/')[window.location.href.toString().split('/').length - 2];
    const home = window.location.hostname;
 
  if(home === href) {
