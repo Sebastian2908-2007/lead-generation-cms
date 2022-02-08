@@ -893,7 +893,38 @@ label {
   }
    /*add note or the single-lead.handlebars ends*/
 
-   /*single-note.handlebars (edit note)starts*/
+  /*single-note.handlebars (edit note)starts*/
+.single-note-edit{
+  height: 73vh;
+}
+
+.single-note-edit h1 {
+ margin-top: 3%;
+}
+.single-note-edit h3 {
+ margin-top: 2%;
+}
+
+.edit-note-form{
+    
+    margin-top: 1%;
+}
+
+.save-note-button, .delete-note-btn {
+    font-size: 1.33em;
+    margin-top: 11%;
+    width: 20vw;
+ 
+}
+
+.save-note-button{
+    
+    margin-right: 25%;
+}
+
+.delete-note-btn{
+    margin-left: 25%;
+}
 /*single-note.handlebars (edit note)ends*/
     
     
