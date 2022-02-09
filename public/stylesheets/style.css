@@ -85,7 +85,14 @@ main{
     font-size: 90%;
      
 }
- 
+
+.new-lead-form button:hover {
+    box-shadow: 0 2px #08302F;
+    background-color: #B82601;
+    top: -2px;
+  } 
+
+
 .new-lead-form input {
     border: 1px solid #08302F;
     padding: 7px 1px;
@@ -204,6 +211,12 @@ nav button {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+nav button:hover {
+    box-shadow: 0 2px #08302F;
+    background-color: #B82601;
+    top: -2px;
+  } 
+
 nav a {
     margin-top: 40px;
     margin-left: 20px;
@@ -279,6 +292,12 @@ nav a {
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.admin-link:hover {
+    box-shadow: 0 2px #08302F;
+    color: #0375B4;
+    top: -2px;
+  } 
 /*=========================================*/
 
 /*this styles the code in lead info handlebars*/
@@ -345,6 +364,12 @@ nav a {
     font-weight: bolder;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.note-form button:hover {
+    box-shadow: 0 2px #08302F;
+    background-color: #0375B4;
+    top: -2px;
+  } 
 
 .meta{
  font-size: 1em;
@@ -435,6 +460,12 @@ nav a {
     height: 6vh;
 }
 
+.save-note-button:hover {
+    box-shadow: 0 2px #08302F;
+    background-color: #0375B4;
+    top: -2px;
+  } 
+
 .delete-note-btn{
     border-radius: 11px;
     background-color: white;
@@ -443,6 +474,12 @@ nav a {
     width: 18vw;
     height: 6vh;
 }
+
+.delete-note-btn:hover {
+    box-shadow: 0 2px #08302F;
+    background-color: #B82601;
+    top: -2px;
+  } 
 
 
 /*single-note.handlebars or "Edit Note" ends*/
@@ -499,6 +536,18 @@ nav a {
     margin: 6%;
 }
 
+#save-lead:hover {
+    box-shadow: 0 2px #08302F;
+    background-color: #0375B4;
+    top: -2px;
+  } 
+
+  #delete-lead:hover {
+    box-shadow: 0 2px #08302F;
+    background-color: #B82601;
+    top: -2px;
+  } 
+
 .edit-lead-form-span  {
     font-size: 1.55em;
     margin-right: 11px;
@@ -515,6 +564,12 @@ nav a {
     color:#0E8044 ;
     border-bottom: 1px solid #0E8044;
 }
+
+.edit-lead-form-link:hover {
+    box-shadow: 0 2px #08302F;
+    color: #0375B4;
+    top: -2px;
+  } 
 /*style for edit-lead.handlebars ends*/
 /*login.handlebars starts*/
 .login-form{
@@ -538,6 +593,12 @@ nav a {
     height: 6vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.login-form button:hover {
+    box-shadow: 0 2px #08302F;
+    background-color: #0375B4;
+    top: -2px;
+  } 
 
 .login-form label {
 font-size: 1em;
