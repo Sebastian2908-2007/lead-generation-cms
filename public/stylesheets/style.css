@@ -204,7 +204,7 @@ header nav {
 }
 
 nav button {
-    margin-top: 3%;
+    margin-top: 20%;
     /* margin-right: 12%; */
     border-radius: 11px;
     background-color: white;
@@ -219,7 +219,7 @@ nav button:hover {
   } 
 
 nav a {
-    margin-top: 40px;
+    margin-top: 20%;
     margin-left: 20px;
 }
 /*conditional header styles ends*/
