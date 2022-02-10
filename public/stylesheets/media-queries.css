@@ -390,8 +390,12 @@ label {
     }
 
     nav button {
-        
+        margin-top: 5%;
         margin-right: 50%;
+    }
+
+    nav a {
+        margin-top: 5%;
     }
 
    .lead-section{
