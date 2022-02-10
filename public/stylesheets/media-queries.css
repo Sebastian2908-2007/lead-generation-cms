@@ -215,7 +215,10 @@
 @media  screen and (min-width: 1024px) {
 
     nav button {
-        margin-bottom: 0%;
+        /* margin-bottom: 0%; */
+        font-size: 1.11em;
+        margin-right: 50%;
+        margin-top: 5%;
     }
 
     .lead-form-article {
@@ -234,11 +237,7 @@
             height: 1vh;
         }
 
-        nav button {
-            font-size: 1.11em;
-            margin-right: 80%;
-            margin-top: 5%;
-        }
+        
 
     /*styles for form begin*/
   .new-lead-form{
@@ -293,7 +292,33 @@ label {
         font-size: 2.15em;
     }
 
-    
+    .edit-note-form {
+        margin-top: 11%;
+    }
+
+    .edit-note-form textarea {
+        font-size: 1.22em;
+    }
+
+    .save-note-button, .delete-note-btn {
+        margin-bottom: 18%;
+    }
+
+    nav button {
+        margin-top: 10%;
+    }
+
+    nav a {
+        margin-top: 10%;
+    }
+
+    .edit-lead-form{
+        height: 85vh;
+    }
+
+    .edit-form-btn-container {
+        margin-top: 0%;
+    }
 }
 
 
@@ -332,6 +357,22 @@ label {
     
     header nav {
         margin-bottom: 20%;
+    }
+
+    nav a {
+        margin-top: 35%;
+    }
+
+    nav button {
+        margin-top: 35%;
+    }
+
+    .single-note-edit {
+        height: 100vh;
+    }
+
+    .save-note-button , .delete-note-btn {
+        margin-top: 11%;
     }
 
     
