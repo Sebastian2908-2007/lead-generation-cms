@@ -189,8 +189,23 @@
     }
 
     nav button {
-        margin-right: 80%;
-        margin-bottom: 8%;
+        margin-right: 50%;
+        /* margin-bottom: 8%; */
+    }
+
+    .note-form button {
+        font-size: 2em;
+    }
+
+    .note-form textarea{
+        font-size: 1.88em;
+    }
+    .text {
+        font-size: 1.55em;
+    }
+
+    .edit-note-form textarea {
+        font-size: 1.68em;
     }
 }
 
