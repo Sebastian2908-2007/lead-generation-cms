@@ -81,10 +81,10 @@ main{
     margin-top: 2px;
     font-size: 16px;
     border-radius: 10px;
-    height: 15%;
+    /* height: 15%;
     width: 97%;
     font-size: 90%;
-     
+      */
 }
 
 .new-lead-form button:hover {
@@ -322,7 +322,7 @@ nav a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
     /*added this font-size and it seems better on iphone7 but i notice thi li are not growing at all on iphone 7*/
-    font-size: 80%;
+    /* font-size: 80%; */
    
    
 }
