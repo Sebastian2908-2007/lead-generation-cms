@@ -281,7 +281,7 @@ nav a {
  align-items: flex-start; 
  border-bottom: 1px solid #0E8044 ; 
  padding: 10px 10px 10px 10px;
- height: max-content;
+
 }
 
 
@@ -320,6 +320,7 @@ nav a {
     font-size: clamp(1.11rem, 2.25vw, 3rem);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
+    font-size: 80%;
    
    
 }
