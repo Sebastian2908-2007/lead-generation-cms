@@ -320,6 +320,7 @@ nav a {
     font-size: clamp(1.11rem, 2.25vw, 3rem);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
+    /*added this font-size and it seems better on iphone7 but i notice thi li are not growing at all on iphone 7*/
     font-size: 80%;
    
    
@@ -367,6 +368,7 @@ nav a {
 .note-form button{
     border-radius: 11px;
     background-color: white;
+    color: #08302F;
     font-weight: bolder;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
