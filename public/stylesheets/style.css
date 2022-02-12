@@ -65,7 +65,9 @@ main{
     flex-direction: column;
     border: 1px solid black;
     width: 60%;
-    height: 228px;
+    /* height: 228px; */
+    /*changing height o percentage*/
+    height: 75%;
     padding: 10px;
     margin: 3.5%;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
