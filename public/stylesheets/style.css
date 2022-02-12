@@ -256,7 +256,7 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-height: 55vh;
+    /* max-height: 55vh; */
     }
 
     .lead-section h1 {
@@ -308,8 +308,8 @@ nav a {
  align-items: flex-start;  
  margin-top: 5px;
  margin-bottom: 5px;
- height: 50%;
- 
+
+
  
 }
 
