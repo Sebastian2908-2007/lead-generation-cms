@@ -64,3 +64,6 @@ Admin Name: Robert
 Admin password: klondikestix
 
 ![Screenshot (127)](https://user-images.githubusercontent.com/77297220/153990977-909e2800-574a-45cd-89ba-95a9ee692b93.png)
+
+![Screenshot (128)](https://user-images.githubusercontent.com/77297220/153991041-88e975ea-4836-4e5b-a0a7-aadff1906946.png)
+
