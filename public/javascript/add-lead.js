@@ -5,10 +5,12 @@ event.preventDefault();
    const last_name = document.querySelector('#lead-last-name').value;
    const email = document.querySelector('#email').value;
    const phone_number = document.querySelector('#phone-number').value;
+   // inputs so that i can set success value when lead is properly added
    const input1 = document.querySelector("input[name='lead-first-name']");
    const input2 = document.querySelector("input[name='lead-last-name']");
    const input3 = document.querySelector("input[name='email']");
    const input4 = document.querySelector("input[name='phone-number']");
+   // array to hold inputs for my validation for loop
    let inputArr = [input1,input2,input3,input4];
    const response = await fetch('/api/leads', {
        method: 'POST',
