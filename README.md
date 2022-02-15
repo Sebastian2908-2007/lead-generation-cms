@@ -67,3 +67,5 @@ Admin password: klondikestix
 
 ![Screenshot (128)](https://user-images.githubusercontent.com/77297220/153991041-88e975ea-4836-4e5b-a0a7-aadff1906946.png)
 
+![Screenshot (130)](https://user-images.githubusercontent.com/77297220/153991115-726d30ac-f542-4b1b-b82e-526dfea59047.png)
+
