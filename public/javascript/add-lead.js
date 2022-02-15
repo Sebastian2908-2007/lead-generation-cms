@@ -5,6 +5,11 @@ event.preventDefault();
    const last_name = document.querySelector('#lead-last-name').value;
    const email = document.querySelector('#email').value;
    const phone_number = document.querySelector('#phone-number').value;
+   const input1 = document.querySelector("input[name='lead-first-name']");
+   const input2 = document.querySelector("input[name='lead-last-name']");
+   const input3 = document.querySelector("input[name='email']");
+   const input4 = document.querySelector("input[name='phone-number']");
+   let inputArr = [input1,input2,input3,input4];
    const response = await fetch('/api/leads', {
        method: 'POST',
        body: JSON.stringify({
@@ -18,7 +23,14 @@ event.preventDefault();
        }
    })
    if(response.ok) {
-       location.reload();
+    // for loop for giving submission success validation
+    for(let i = 0; i < inputArr.length; i++) {
+        inputArr[i].value = 'success';
+    }
+    setTimeout(() => {
+         location.reload();
+       },4000)
+      
        return;
    }else{
        alert(response.statusText);
