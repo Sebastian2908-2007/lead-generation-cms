@@ -24,7 +24,7 @@ This is a one user/admin customer relationship management tool for the leads cap
 dotenv, connect-session-sequelize, express, express-handlebars, express-session, mysql2, sequelize
 
 ## Usage
- As a part of target group you would simply fill out the form if you are the Admin then you would log in look at the leeds a add notes for them or delete them if they were no longer viable leads. If you want to test this aspect look for the second link Heroku link in the read me. Go to login page Admin Name: Robert, Admin password: klondikestix. If you would like this app on your machine simply clone the repo.
+ As a part of the target group you would simply fill out the form if you are the Admin then you would log in look at the leads and add notes for them or delete them if they were no longer viable leads. If you want to test this aspect look for the second  Heroku link in the read me. Go to login page Admin Name: Robert, Admin password: klondikestix. If you would like this app on your machine simply clone the repo.
 
  ## Contributors
 
